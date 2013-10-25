@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @vodka.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @vodka.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_vodka_path(@vodka) %> |
+<%= link_to 'Back', vodkas_path %>

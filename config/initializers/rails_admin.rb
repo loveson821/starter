@@ -60,6 +60,11 @@ RailsAdmin.config do |config|
   # Anyway, here is how RailsAdmin saw your application's models when you ran the initializer:
 
 
+  config.model 'Vodka' do
+    configure :description do
+      html_attributes rows: 5, cols: 52
+    end
+  end
 
   ###  Role  ###
 

@@ -1,0 +1,25 @@
+<h1>Listing vodkas</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vodkas.each do |vodka| %>
+  <tr>
+    <td><%= vodka.name %></td>
+    <td><%= vodka.description %></td>
+    <td><%= link_to 'Show', vodka %></td>
+    <td><%= link_to 'Edit', edit_vodka_path(vodka) %></td>
+    <td><%= link_to 'Destroy', vodka, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vodka', new_vodka_path %>

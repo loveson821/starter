@@ -1,6 +1,9 @@
 Mystarter::Application.routes.draw do
   
 
+  resources :vodkas
+
+
   authenticated :user do
     root :to => 'home#index'
   end
