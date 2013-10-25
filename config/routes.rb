@@ -1,4 +1,6 @@
 Mystarter::Application.routes.draw do
+  
+
   authenticated :user do
     root :to => 'home#index'
   end
@@ -6,5 +8,5 @@ Mystarter::Application.routes.draw do
   devise_for :users
   resources :users
   
-  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+  mount RailsAdmin::Engine => '/admin' , :as => 'rails_admin'
 end
