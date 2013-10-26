@@ -64,7 +64,25 @@ RailsAdmin.config do |config|
     configure :description do
       html_attributes rows: 5, cols: 52
     end
+
+    # configure :images do
+    #     active true
+    # end
+    # field :images do
+      # inverse_of :attachable
+    # end
+
+    include_all_fields
   end
+
+  # config.model 'Image' do
+  #   field :attachable_type do
+  #     default_value do
+  #       'Vodka'
+  #     end
+  #   end
+  #   include_all_fields
+  # end
 
   ###  Role  ###
 

@@ -16,6 +16,7 @@ gem 'rolify'
 gem 'simple_form'
 gem 'thin'
 gem 'rails_admin'
+gem "paperclip", "~> 3.0"
 
 group :development do
   gem 'better_errors'
